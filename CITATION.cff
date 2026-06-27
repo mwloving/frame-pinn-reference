@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "frame-guided-monte-carlo"
+version: "0.1.0"
+date-released: "2026-04-24"
+type: software
+authors:
+  - family-names: "Loving"
+    given-names: "Matthew"
+    affiliation: "ORS Quantum LLC"
+    email: "matthew.loving@orsquantum.com"
+abstract: >
+  A minimal scalar case demonstration of admissibility weighted path
+  sampling. Self normalized importance sampling estimators are built on
+  a Brownian baseline path measure and benchmarked with convergence and
+  weight degeneracy diagnostics. Intended as a reproducible public
+  artifact accompanying a larger research program on governed path
+  transport and evaluation dependent inference.
+keywords:
+  - monte-carlo
+  - importance-sampling
+  - path-sampling
+  - variance-reduction
+  - governed-inference
+license: MIT
