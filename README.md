@@ -29,4 +29,4 @@ Initial public reference implementation.
 
 ## License
 
-Apache-2.0
+MIT
