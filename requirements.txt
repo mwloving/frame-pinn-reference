@@ -1,2 +1,5 @@
-numpy>=1.26
-matplotlib>=3.8
+torch>=1.13
+# optional, only for figure-producing examples:
+# matplotlib>=3.5
+# optional, only for running the test suite:
+# pytest>=7.0

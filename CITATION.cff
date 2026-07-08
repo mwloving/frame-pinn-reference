@@ -1,25 +1,33 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata below."
-title: "frame-guided-monte-carlo"
-version: "0.1.0"
-date-released: "2026-04-24"
+message: "If you use this software, please cite both the software and the accompanying article."
+title: "FRAME-PINN: A Software Framework for Structural Diagnostics in Physics-Informed Neural Networks"
+abstract: >-
+  FRAME-PINN is a Python package that measures the structural contribution of
+  individual physical constraints inside a physics-informed neural network. It
+  provides frozen and retrain eliminability, an ordering defect, and a stability
+  diagnostic over a loss expressed as a set of named, individually addressable
+  residual terms.
 type: software
-authors:
-  - family-names: "Loving"
-    given-names: "Matthew"
-    affiliation: "ORS Quantum LLC"
-    email: "matthew.loving@orsquantum.com"
-abstract: >
-  A minimal scalar case demonstration of admissibility weighted path
-  sampling. Self normalized importance sampling estimators are built on
-  a Brownian baseline path measure and benchmarked with convergence and
-  weight degeneracy diagnostics. Intended as a reproducible public
-  artifact accompanying a larger research program on governed path
-  transport and evaluation dependent inference.
-keywords:
-  - monte-carlo
-  - importance-sampling
-  - path-sampling
-  - variance-reduction
-  - governed-inference
+version: "1.0.0"
+date-released: "2026-06-01"
 license: MIT
+authors:
+  - family-names: Loving
+    given-names: Matthew W.
+    affiliation: "ORS Quantum LLC"
+repository-code: "https://github.com/mwloving/frame-pinn-reference"
+keywords:
+  - physics-informed neural networks
+  - scientific machine learning
+  - diagnostics
+  - eliminability
+  - pytorch
+preferred-citation:
+  type: article
+  title: "FRAME-PINN: A Software Framework for Structural Diagnostics in Physics-Informed Neural Networks"
+  authors:
+    - family-names: Loving
+      given-names: Matthew W.
+      affiliation: "ORS Quantum LLC"
+  journal: "SoftwareX"
+  year: 2026

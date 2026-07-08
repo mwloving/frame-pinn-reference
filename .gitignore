@@ -1,36 +1,13 @@
-# Byte compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-
-# Distribution / packaging
-build/
-dist/
 *.egg-info/
 .eggs/
-
-# Testing / coverage
+build/
+dist/
 .pytest_cache/
-.coverage
-htmlcov/
-.tox/
-
-# Virtual environments
+.ipynb_checkpoints/
+.venv/
 venv/
 env/
-.venv/
-.env/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# IDE and editor
-.vscode/
-.idea/
-*.swp
-*.swo
+*.so
 .DS_Store
-
-# Note: figures/ is intentionally tracked so the repository displays
-# results without requiring the reader to run the code.
