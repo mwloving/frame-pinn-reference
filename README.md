@@ -1,31 +1,35 @@
 # FRAME-PINN Reference
 
-Toy-model reference implementation for applying the FRAME Eliminability diagnostic to Physics-Informed Neural Networks (PINNs).
-
-This repository is intended as a lightweight, reproducible demonstration of how eliminability can be used to evaluate the structural importance of PDE terms, constraints, and residual components in PINN-style models.
+**FRAME-PINN Reference** is a lightweight, reproducible reference implementation demonstrating the **FRAME Eliminability diagnostic** for Physics-Informed Neural Networks (PINNs). Rather than introducing a new PINN architecture, the repository provides diagnostic tools for evaluating the structural importance of PDE terms, boundary conditions, initial conditions, and residual components within representative PINN benchmark problems.
 
 ## Purpose
 
-The goal is not to provide a production PINN solver. The goal is to demonstrate a governance diagnostic:
+This repository accompanies the FRAME-PINN methodology and is intended as a reproducible research reference. It demonstrates how eliminability-based diagnostics can be used to:
 
-* identify which terms are structurally important,
-* test whether term rankings are stable across seeds,
-* detect ordering defects,
-* compare behavior across PDE examples,
-* produce reproducible JSON/JSONL diagnostic outputs.
+* identify structurally important PDE terms and constraints,
+* measure ranking stability across independent training seeds,
+* detect ordering defects in learned physics,
+* compare structural behavior across multiple PDE benchmarks,
+* generate reproducible diagnostic reports and validation artifacts.
+
+The emphasis is on **structural diagnostics**, not maximizing numerical accuracy or providing a production PINN framework.
 
 ## Included Examples
 
-Planned or included toy examples:
+The reference implementation includes lightweight benchmark demonstrations for:
 
 * Burgers equation
-* Allen-Cahn equation
-* 2D Navier-Stokes toy cavity setup
-* fast smoke test
+* Allen–Cahn equation
+* 2D Navier–Stokes cavity flow
+* Fast smoke test
+
+These examples illustrate how the FRAME Eliminability diagnostic can be applied consistently across multiple classes of physics-informed learning problems.
 
 ## Repository Status
 
-Initial public reference implementation.
+**FRAME-PINN Reference v1.0.0**
+
+This repository provides the reference implementation accompanying the FRAME-PINN publication and is intended for reproducible evaluation of eliminability, ordering defects, and structural diagnostics in representative PINN benchmark problems.
 
 ## License
 
