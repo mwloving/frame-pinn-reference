@@ -3,7 +3,6 @@
 **FRAME-PINN Reference** is a lightweight, reproducible reference implementation demonstrating the **FRAME Eliminability diagnostic** for Physics-Informed Neural Networks (PINNs). Rather than introducing a new PINN architecture, the repository provides diagnostic tools for evaluating the structural importance of PDE terms, boundary conditions, initial conditions, and residual components within representative PINN benchmark problems.
 
 ## Quick Start
-
 Clone the repository and install the required dependencies:
 
 ```bash
