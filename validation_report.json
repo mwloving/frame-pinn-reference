@@ -1,0 +1,340 @@
+{
+  "phases": [
+    {
+      "phase": "Burgers",
+      "n_seeds": 3,
+      "final_loss": [
+        0.4234,
+        0.3808,
+        0.3973
+      ],
+      "pde_residual": [
+        0.1147,
+        0.106,
+        0.1032
+      ],
+      "retrain_rank_per_seed": [
+        [
+          "ic",
+          "u_t",
+          "bc",
+          "adv",
+          "diff"
+        ],
+        [
+          "ic",
+          "u_t",
+          "bc",
+          "adv",
+          "diff"
+        ],
+        [
+          "ic",
+          "u_t",
+          "bc",
+          "adv",
+          "diff"
+        ]
+      ],
+      "ordering_field_per_seed": [
+        19.808,
+        17.531,
+        28.057
+      ],
+      "ordering_rank_changed": [
+        true,
+        true,
+        true
+      ],
+      "retrain_stats": {
+        "u_t": {
+          "mu": 7.9808,
+          "sigma": 0.4321
+        },
+        "adv": {
+          "mu": 1.8612,
+          "sigma": 0.2182
+        },
+        "diff": {
+          "mu": -0.0075,
+          "sigma": 0.0139
+        },
+        "ic": {
+          "mu": 11.4571,
+          "sigma": 0.2916
+        },
+        "bc": {
+          "mu": 4.3848,
+          "sigma": 0.7372
+        }
+      },
+      "frozen_stats": {
+        "u_t": {
+          "mu": -0.3173,
+          "sigma": 0.0061
+        },
+        "adv": {
+          "mu": -0.4799,
+          "sigma": 0.0271
+        },
+        "diff": {
+          "mu": -0.0005,
+          "sigma": 0.0
+        },
+        "ic": {
+          "mu": -0.176,
+          "sigma": 0.0356
+        },
+        "bc": {
+          "mu": -0.0263,
+          "sigma": 0.0135
+        }
+      },
+      "rank_consistency": {
+        "modal_top1": "ic",
+        "top1_agreement": 1.0,
+        "mean_kendall_tau": 1.0
+      },
+      "important_terms": [
+        "u_t",
+        "adv",
+        "ic",
+        "bc"
+      ],
+      "checks": {
+        "rankings_stable": true,
+        "rankings_match_physics": true,
+        "dominant_terms_not_eliminable": true,
+        "ordering_defect_nonzero": true,
+        "expected_eliminable_rank_low": true
+      }
+    },
+    {
+      "phase": "Allen-Cahn",
+      "n_seeds": 3,
+      "final_loss": [
+        3.157,
+        2.3614,
+        2.5691
+      ],
+      "pde_residual": [
+        0.462,
+        0.3216,
+        0.6138
+      ],
+      "retrain_rank_per_seed": [
+        [
+          "bc",
+          "ic",
+          "react_lin",
+          "react_cubic",
+          "u_t",
+          "diff"
+        ],
+        [
+          "bc",
+          "react_lin",
+          "ic",
+          "u_t",
+          "react_cubic",
+          "diff"
+        ],
+        [
+          "bc",
+          "react_lin",
+          "ic",
+          "react_cubic",
+          "u_t",
+          "diff"
+        ]
+      ],
+      "ordering_field_per_seed": [
+        30.67,
+        35.446,
+        37.611
+      ],
+      "ordering_rank_changed": [
+        true,
+        true,
+        true
+      ],
+      "retrain_stats": {
+        "u_t": {
+          "mu": -0.018,
+          "sigma": 0.227
+        },
+        "diff": {
+          "mu": -0.233,
+          "sigma": 0.0813
+        },
+        "react_cubic": {
+          "mu": -0.037,
+          "sigma": 0.1825
+        },
+        "react_lin": {
+          "mu": 0.365,
+          "sigma": 0.2097
+        },
+        "ic": {
+          "mu": 0.2371,
+          "sigma": 0.1017
+        },
+        "bc": {
+          "mu": 5.3308,
+          "sigma": 0.8151
+        }
+      },
+      "frozen_stats": {
+        "u_t": {
+          "mu": -0.0148,
+          "sigma": 0.0029
+        },
+        "diff": {
+          "mu": -0.0,
+          "sigma": 0.0
+        },
+        "react_cubic": {
+          "mu": -0.1532,
+          "sigma": 0.0488
+        },
+        "react_lin": {
+          "mu": -0.6134,
+          "sigma": 0.0673
+        },
+        "ic": {
+          "mu": -0.0949,
+          "sigma": 0.0454
+        },
+        "bc": {
+          "mu": -0.1237,
+          "sigma": 0.0662
+        }
+      },
+      "rank_consistency": {
+        "modal_top1": "bc",
+        "top1_agreement": 1.0,
+        "mean_kendall_tau": 0.8222222222222222
+      },
+      "important_terms": [
+        "react_lin",
+        "ic",
+        "bc"
+      ],
+      "checks": {
+        "rankings_stable": true,
+        "rankings_match_physics": true,
+        "dominant_terms_not_eliminable": true,
+        "ordering_defect_nonzero": true,
+        "expected_eliminable_rank_low": true
+      }
+    },
+    {
+      "phase": "Navier-Stokes",
+      "n_seeds": 3,
+      "final_loss": [
+        0.3802,
+        0.3343,
+        0.343
+      ],
+      "pde_residual": [
+        0.005,
+        0.0022,
+        0.0039
+      ],
+      "retrain_rank_per_seed": [
+        [
+          "data",
+          "pressure",
+          "continuity",
+          "viscous",
+          "advective"
+        ],
+        [
+          "data",
+          "continuity",
+          "viscous",
+          "pressure",
+          "advective"
+        ],
+        [
+          "data",
+          "pressure",
+          "continuity",
+          "viscous",
+          "advective"
+        ]
+      ],
+      "ordering_field_per_seed": [
+        22.649,
+        16.614,
+        18.965
+      ],
+      "ordering_rank_changed": [
+        true,
+        true,
+        true
+      ],
+      "retrain_stats": {
+        "advective": {
+          "mu": -0.4131,
+          "sigma": 0.1576
+        },
+        "pressure": {
+          "mu": 1.1259,
+          "sigma": 0.5181
+        },
+        "viscous": {
+          "mu": 0.1877,
+          "sigma": 0.5185
+        },
+        "continuity": {
+          "mu": 0.7857,
+          "sigma": 0.3328
+        },
+        "data": {
+          "mu": 3.3798,
+          "sigma": 1.1077
+        }
+      },
+      "frozen_stats": {
+        "advective": {
+          "mu": -0.0235,
+          "sigma": 0.0069
+        },
+        "pressure": {
+          "mu": -0.0169,
+          "sigma": 0.0214
+        },
+        "viscous": {
+          "mu": -0.0177,
+          "sigma": 0.0124
+        },
+        "continuity": {
+          "mu": -0.0502,
+          "sigma": 0.0055
+        },
+        "data": {
+          "mu": -0.8916,
+          "sigma": 0.0407
+        }
+      },
+      "rank_consistency": {
+        "modal_top1": "data",
+        "top1_agreement": 1.0,
+        "mean_kendall_tau": 0.7333333333333333
+      },
+      "important_terms": [
+        "pressure",
+        "continuity",
+        "data"
+      ],
+      "checks": {
+        "rankings_stable": true,
+        "rankings_match_physics": true,
+        "dominant_terms_not_eliminable": true,
+        "ordering_defect_nonzero": true,
+        "expected_eliminable_rank_low": true
+      }
+    }
+  ]
+}
